@@ -1,21 +1,36 @@
-import { User } from "./User";
+import "./App.css";
+import { useState } from "react";
 
 function App() {
-  const names = ["Aditya", "Omkar", "Supriya", "Kashinath"];
-  const users = [
-    { name: "Aditya", age: 20 },
-    { name: "Omkar", age: 21 },
-  ];
+  // Syntax const [variable, functionToChangeVariable] = useState(initialValue);
+  const [age, setAge] = useState(0);
+  const [text, setText] = useState("Hi");
+  const [color, setColor] = useState("black");
+
+  const increaseAge = () => {
+    setAge(age + 1);
+  };
+
+  const handleInput = (e) => {
+    setText(e.target.value);
+  };
 
   return (
     <div className="App">
-      {names.map((value, key) => {
-        return <div key={key}> {value} </div>;
-      })}
-
-      {users.map((user, key) => {
-        return <User name={user.name} age={user.age} />;
-      })}
+      <div>{age}</div>
+      <button onClick={increaseAge}>Increase Age</button>
+      <hr />
+      <input type="text" onChange={handleInput} />
+      <div>{text}</div>
+      <hr />
+      <button
+        onClick={() => {
+          setColor(color == "black" ? "red" : "black");
+        }}
+      >
+        Show/Hide
+      </button>
+      <h1 style={{ color: color }}>Hi this is Aditya</h1>
     </div>
   );
 }
