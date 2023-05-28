@@ -1,5 +1,5 @@
 import { User } from "./User";
-
+// To see more details in the basics check the commits. Each commit has a different topic.
 function App() {
   const names = ["Aditya", "Omkar", "Supriya", "Kashinath"];
   const users = [
