@@ -24,7 +24,7 @@ Welcome to the React Tutorial repository! Each branch of this repository focuses
 3. Once you've finished a topic, you can switch to another branch to explore a different topic.
 4. Feel free to create your own branches and experiment further with React or contribute to the repository if you have any improvements or additional topics to cover.
 
-##Resources
+## Resources
 - [React Documentation](https://legacy.reactjs.org/docs/getting-started.html)
 - [New React Documentation](https://react.dev/blog/2023/03/16/introducing-react-dev)
 - [Youtube React Tutorial](https://youtu.be/f55qeKGgB_M)
