@@ -1,9 +1,21 @@
-import styles from "./App.module.css";
-// Another way of using css
+import { User } from "./User";
+
 function App() {
+  const names = ["Aditya", "Omkar", "Supriya", "Kashinath"];
+  const users = [
+    { name: "Aditya", age: 20 },
+    { name: "Omkar", age: 21 },
+  ];
+
   return (
-    <div className={styles.App}>
-      <div className={styles.Profile}>Profile</div>
+    <div className="App">
+      {names.map((value, key) => {
+        return <div key={key}> {value} </div>;
+      })}
+
+      {users.map((user, key) => {
+        return <User name={user.name} age={user.age} />;
+      })}
     </div>
   );
 }
