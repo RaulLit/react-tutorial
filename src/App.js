@@ -1,18 +1,25 @@
+import { useEffect, useState } from "react";
 import "./App.css";
-import { useState } from "react";
-import { Text } from "./Text";
 
 function App() {
-  const [showText, setShowText] = useState(false);
+  const [catFact, setCatFact] = useState("");
 
-  const handleClick = () => {
-    setShowText(!showText);
+  const fetchCatFact = () => {
+    fetch("https://catfact.ninja/fact")
+      .then((res) => res.json()) // json() function converts json to javascript object
+      .then((data) => {
+        setCatFact(data.fact);
+      });
   };
+
+  useEffect(() => {
+    fetchCatFact();
+  }, []);
 
   return (
     <div className="App">
-      <button onClick={handleClick}>Show/hide Text</button>
-      {showText && <Text />}
+      <button onClick={fetchCatFact}>Generate Cat Fact</button>
+      <p>{catFact}</p>
     </div>
   );
 }
