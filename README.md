@@ -5,8 +5,15 @@ Welcome to the React Tutorial repository! Each branch of this repository focuses
 ## Branches
 
 - [branch-1](https://github.com/raullit/react-tutorial/tree/basics): Covers basics (File structure, components, rendering lists)
-
 - [branch-2](https://github.com/raullit/react-tutorial/tree/useState): Covers useState Hook
+- [branch-3](https://github.com/raullit/react-tutorial/tree/to-do-list): CRUD in react, To-Do List
+- [branch-4](https://github.com/raullit/react-tutorial/tree/useEffect): Covers useEffect Hook
+- [branch-5](https://github.com/raullit/react-tutorial/tree/fetch-api-request): Covers fetching data from APIs
+- [branch-6](https://github.com/raullit/react-tutorial/tree/react-router): Covers react router dom
+- [branch-7](https://github.com/raullit/react-tutorial/tree/useContext): Covers state management, useContext hook
+- [branch-8](https://github.com/raullit/react-tutorial/tree/react-query): Covers React Query
+- [branch-9](https://github.com/raullit/react-tutorial/tree/react-hook-form): Covers forms in react
+- [branch-10](https://github.com/raullit/react-tutorial/tree/custom-hooks): Covers custom hooks
 
 ## Instructions
 
