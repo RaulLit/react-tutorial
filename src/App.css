@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
   display: flex;
   align-items: center;
@@ -44,4 +48,20 @@ body {
   height: 20px;
   margin-left: 5px;
   text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+form input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
 }
